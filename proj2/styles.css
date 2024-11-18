@@ -1,0 +1,510 @@
+:root {
+  --border-color: #99a3ad;
+  --btn-color: #e81a46;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* Header section: */
+.main-header {
+  background-image: url(./images/BG\ Image.png);
+}
+
+header {
+  width: 1500px;
+  padding: 2% 10% 5% 10%;
+}
+
+header .header-wrapper1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.header-wrapper1 div {
+  display: flex;
+  gap: 100px;
+  align-items: baseline;
+}
+
+.header-wrapper1 nav {
+  display: flex;
+  gap: 20px;
+}
+
+.my-btn {
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.border-btn {
+  background: transparent;
+  border: 2px solid transparent;
+}
+
+.solid-btn {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+/* Banner section: */
+.banner {
+  padding: 5% 12% 5% 10%;
+  position: relative;
+}
+
+.banner .vertical {
+  font-size: 20px;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.banner-wrapper .banner1 p {
+  font-size: 20px;
+  color: white;
+}
+
+.banner-wrapper .banner1 h1 {
+  font-size: 100px;
+  color: white;
+}
+
+.banner-wrapper .banner2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.banner2 > div:first-child img {
+  margin: 20px 0px;
+}
+
+.banner3 {
+  background-color: white;
+  color: black;
+  margin-top: 60px;
+  padding: 2% 0% 2% 5%;
+  border: 2px solid black;
+  border-radius: 30px;
+  display: grid;
+  align-items: center;
+  justify-self: stretch;
+  grid-template-columns: auto auto auto auto;
+  grid-template-areas: "banner3-c1 banner3-c2 banner3-c3 banner3-c4";
+}
+
+.banner3 div {
+  margin-top: 10px;
+}
+
+.banner3 .banner3-c1 {
+  padding-top: 25px;
+  grid-area: banner3-c1;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.banner3 .banner3-c1 p {
+  color: var(--border-color);
+}
+
+.banner3 .banner3-c1 img {
+  align-content: baseline;
+  position: relative;
+  bottom: 50px;
+  left: 180px;
+}
+
+.banner3 .banner3-c2 {
+  padding-top: 25px;
+  grid-area: banner3-c2;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.banner3 .banner3-c2 img {
+  align-content: baseline;
+  position: relative;
+  bottom: 50px;
+  left: 130px;
+}
+
+.banner3 .banner3-c2 p {
+  color: var(--border-color);
+}
+
+.banner3 .banner3-c3 {
+  padding-top: 25px;
+  grid-area: banner3-c3;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.banner3 .banner3-c3 img {
+  align-content: baseline;
+  position: relative;
+  bottom: 50px;
+  left: 130px;
+}
+
+.banner3 .banner3-c3 p {
+  color: var(--border-color);
+}
+
+.banner3 .banner3-c4 {
+  grid-area: banner3-c4;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* Category Section: */
+.category {
+  padding: 5% 10% 5% 10%;
+}
+
+.category .category-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category .category-wrapper p {
+  color: var(--border-color);
+}
+
+/* Counts Section: */
+.counts {
+  padding: 0% 10% 5% 10%;
+}
+
+.counts .counts-wrapper div {
+  border: 2px solid var(--border-color);
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.counts .counts-wrapper div .badge {
+  margin-left: 140px;
+  margin-bottom: 20px;
+}
+
+.counts .counts-wrapper p {
+  color: var(--border-color);
+}
+
+.counts .counts-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Trending Section */
+.trending {
+  padding: 0% 10% 5% 10%;
+}
+
+.trending .trending-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trending .trending-wrapper p {
+  color: var(--border-color);
+}
+
+/* Places section */
+.places {
+  padding: 0% 10% 5% 10%;
+}
+
+.places .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.places .places-wrapper1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.places .places-wrapper1 .place-img {
+  position: relative;
+}
+
+.places .places-wrapper1 .place-img .badge2 {
+  position: absolute;
+  right: 5%;
+  bottom: 80%;
+}
+
+.places-wrapper1 .places1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.places-wrapper1 .places2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Destination section */
+.destination {
+  padding: 0% 10% 5% 10%;
+}
+
+.destination .destination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.destination-wrapper p {
+  color: var(--border-color);
+}
+
+/* Cities section */
+.cities {
+  padding: 0% 10% 5% 10%;
+}
+
+.cities .cities-wrapper {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "city1 city2 city3 city3"
+    "city4 city2 city5 city6";
+}
+
+.cities-wrapper .city1 {
+  grid-area: city1;
+}
+
+.cities-wrapper .city2 {
+  grid-area: city2;
+}
+
+.cities-wrapper .city3 {
+  grid-area: city3;
+}
+
+.cities-wrapper .city4 {
+  grid-area: city4;
+}
+
+.cities-wrapper .city5 {
+  grid-area: city5;
+}
+
+.cities-wrapper .city6 {
+  grid-area: city6;
+}
+
+/* seller-btn */
+.seller-btn {
+  padding: 0% 10% 5% 10%;
+}
+
+.seller-btn .seller-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seller-solid-btn {
+  padding: 10px;
+  background-color: var(--btn-color);
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+/* Best seller section */
+.seller {
+  padding: 0% 10% 5% 10%;
+}
+
+.seller .seller-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seller .seller-wrapper div .badge-seller {
+  position: relative;
+  right: 20%;
+  bottom: 200px;
+}
+
+.seller .seller-wrapper div .days-seller {
+  position: relative;
+  left: 3%;
+  bottom: 90px;
+  color: white;
+}
+
+.seller .seller-wrapper div .days-seller-price {
+  position: relative;
+  left: 3%;
+  bottom: 80px;
+  color: white;
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.seller .seller-wrapper div .share-seller {
+  position: relative;
+  left: 70%;
+  bottom: 150px;
+  color: white;
+}
+
+.seller-solid-btn-share {
+  padding: 5px;
+  background-color: var(--btn-color);
+  color: white;
+  border: 1px solid var(--btn-color);
+  border-radius: 20px;
+}
+
+.seller .seller-wrapper div .seller-solid-btn-share {
+  position: relative;
+  left: 52%;
+  bottom: 120px;
+  color: white;
+}
+
+.seller .seller-wrapper .seller1 > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seller .seller-wrapper .seller1 > div:last-child p {
+  font-size: 12px;
+  color: var(--border-color);
+}
+
+.seller .seller-wrapper .seller2 > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seller .seller-wrapper .seller2 > div:last-child p {
+  font-size: 12px;
+  color: var(--border-color);
+}
+
+.seller .seller-wrapper .seller3 > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seller .seller-wrapper .seller3 > div:last-child p {
+  font-size: 12px;
+  color: var(--border-color);
+}
+
+/* Tour guide-btn */
+.guides-btn {
+  padding: 0% 10% 5% 10%;
+}
+
+.guides-btn .guides-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Tour guides */
+.tour-guides {
+  padding: 0% 0% 5% 10%;
+  display: flex;
+}
+
+.tour-guides > div:nth-child(2) {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.tour-guides > div:nth-child(2) > div:first-child p {
+  color: var(--btn-color);
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+.tour-guides > div:nth-child(2) > div:first-child h1 {
+  color: black;
+  font-size: 30px;
+}
+
+.tour-guides > div:nth-child(2) > div:nth-child(2) p {
+  font-size: 15px;
+}
+
+.tour-guides > div:nth-child(2) > div:last-child nav a {
+  color: black;
+}
+
+.tour-guides > div:nth-child(3) {
+  padding: 110px 0px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-guides > div:nth-child(3) h1 {
+  color: black;
+  font-size: 20px;
+  padding-right: 70%;
+}
+
+.tour-guides > div:nth-child(3) p {
+  font-size: 15px;
+}
+
+.tour-guides > div:last-child {
+  position: relative;
+  left: 2%;
+}

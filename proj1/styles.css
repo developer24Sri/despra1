@@ -1,0 +1,148 @@
+:root {
+  --btn1: #c32f34;
+  --btn2: #f2902f;
+  --color1: #522222;
+  --color2: #8b2024;
+  --color3: #821d20;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Header section */
+header {
+  width: 100%;
+  padding: 0% 10% 0% 10%;
+  background-image: url(./images/bannerimg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .header-wrapper {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "wrapper1 wrapper2 wrapper2 wrapper2 wrapper2"
+    "wrapper1 wrapper3 wrapper3 wrapper3 wrapper3";
+}
+
+.header-wrapper .wrapper1 {
+  grid-area: wrapper1;
+}
+
+.header-wrapper .wrapper2 {
+  grid-area: wrapper2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-wrapper .wrapper2 div {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.header-wrapper .wrapper2 img {
+  margin-right: 5px;
+}
+
+.header-wrapper .wrapper3 {
+  grid-area: wrapper3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-wrapper .wrapper3 nav {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.my-btn {
+  padding: 10px 30px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.border-btn {
+  background-color: var(--btn1);
+  border: 2px solid var(--btn1);
+  color: white;
+}
+
+.solid-btn {
+  background-color: var(--btn2);
+  border: 2px solid var(--btn2);
+  color: var(--color1);
+}
+
+.header-wrapper2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding: 5% 0%;
+}
+
+.header-wrapper2 div h1 {
+  padding-right: 2%;
+}
+
+.header-wrapper2 div h1 .header-noneblock {
+  font-size: 50px;
+  font-weight: 25;
+}
+
+.header-wrapper2 .header-dblock {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.header-wrapper2 div a {
+  padding-right: 16.5%;
+}
+
+.header-wrapper3 {
+  display: grid;
+  grid-template-rows: 8% 92%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "wrapper4 wrapper4 wrapper4"
+    "wrapper5 wrapper5 wrapper5";
+  padding: 10% 0%;
+}
+
+.header-wrapper3 .wrapper4 {
+  grid-area: wrapper4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-wrapper3 .wrapper5 {
+  background-color: var(--color2);
+  grid-area: wrapper5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--btn2);
+}
+
+.wrapper5 p {
+  padding: 5px;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-right: 10%;
+}
